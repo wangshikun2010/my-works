@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>sudoku</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link type="text/css" href="./css/normalize.css" rel="stylesheet">
+<link type="text/css" href="./css/sudoku.css" rel="stylesheet">
+<script type="text/javascript" src="./js/sudoku.js"></script>
+</head>
+<body>
+<div class="sudoku" id="j-sudoku">
+	<div class="sudoku-panel" id="j-sudoku-panel">
+		<table class="sudoku-table" id="j-sudoku-table">
+		</table>
+	</div>
+	<div class="control-panel" id="j-control-panel">
+		<p class="sudoku-title" id="j-sudoku-title">数独<span>SUDOKU</span></p>
+		<hr/>
+		<input type="checkbox" class="sound" id="j-sound"/>
+		<label for="j-sound" class="label-sound" id="j-label-sound" title="music"></label>
+		<p class="block sudoku-time" id="j-sudoku-time">00:00:00</p>
+		<div class="block sudoku-difficulty" id="j-sudoku-difficulty">
+			<p class="difficulty-title">游戏难度</p>
+			<p class="difficulty" id="j-difficulty">
+				<input type="radio" name="radio" id="radio1" value="0.95" checked="checked" />
+				<label for="radio1">简单</label>
+
+				<input type="radio" name="radio" id="radio2" value="0.5" />
+				<label for="radio2">中等</label>
+
+				<input type="radio" name="radio" id="radio3" value="0.3" />
+				<label for="radio3">困难</label>
+			</p>
+		</div>
+		<input type="button" class="block sudoku-start" id="j-btn-start" data-dialog="start" value="START" />
+		<input type="button" class="block button" id="j-btn-pause" data-dialog="pause" value="PAUSE" />
+		<input type="button" class="block button" id="j-btn-clear" data-dialog="clear" value="CLEAR" />
+		<input type="button" class="block button" id="j-btn-help" data-dialog="help" value="HELP" />
+		<input type="button" class="block button" id="j-btn-rule" data-dialog="rule" value="RULE" />
+	</div>
+</div>
+<div class="number-table" id="j-number-table">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+	<div>7</div>
+	<div>8</div>
+	<div>9</div>
+</div>
+<div class="block dialog" id="j-sudoku-rule">
+	<p>
+		用1至9之间的数字填满空格，一个格子只能填入一个数字,即每个数字在每一行、每一列和每一区只能出现一次
+	</p>
+	<a href="javascript:void(0)" class="block dialog-button" id="j-know">我知道了</a>
+</div>
+<div class="block dialog" id="j-sudoku-pause">
+	<p>暂停</p>
+	<a href="javascript:void(0)" class="block dialog-button" id="j-continue">继续</a>
+</div>
+<div class="block dialog" id="j-sudoku-seccess">
+	<p>成功: 用时<span id="j-game-time"></span></p>
+	<a href="javascript:void(0)" class="block dialog-button" id="j-ok">确定</a>
+</div>
+<audio id="j-audio" src="" autoplay="true" loop></audio>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>todo</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link type="text/css" href="./css/todo.css" rel="stylesheet">
+    <script type="text/javascript" src="./js/eventUtil.js"></script>
+    <script type="text/javascript" src="./js/localStorage.js"></script>
+    <script type="text/javascript" src="./js/todo.js"></script>
+</head>
+<body>
+    <article>
+        <section id="header">
+            <header>todo</header>
+            <div id="j-todo-input">
+                <form action="">
+                    <input type="text" id="j-todo-input-box" placeholder="还有什么事没有做?" autofocus required autocomplete="off"/>
+                </form>
+                <label id="j-select-all">
+                    <input type="checkbox" name="select-all" value="all">全部选中
+                </label>
+            </div>
+        </section>
+        <section id="content">
+            <ul id="j-todo-list"></ul>
+        </section>
+        <footer>
+            <p>
+                <span id="j-todo-list-length"></span>
+                个项目
+            </p>
+            <p id="j-todo-clear-complete">
+                <span id="j-todo-list-complete"></span>
+                个已完成项目
+            </p>
+        </footer>
+    </article>
+</body>
+</html>

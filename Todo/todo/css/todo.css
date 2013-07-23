@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif;
+}
+
+article {
+    width: 600px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 10px;
+    background: #EEF3FA;
+}
+
+/* header */
+
+#header header {
+    margin: 0px;
+    font-size: 30px;
+    color: #B1A9B1;
+    text-align: center;
+}
+
+input#j-todo-input-box,.todo-input-box {
+    width: 98%;
+    height: 25px;
+    padding: 5px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    font-size: 25px;
+    color: #B847FF;
+    outline: none;
+    text-shadow: 0px 1px 0px #fff;
+    -webkit-border-radius: 3px;
+    -webkit-transition: .3s ease-in-out;
+    -moz-border-radius: 3px;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+
+input#j-todo-input-box:focus,.todo-input-box:focus {
+    box-shadow: 0px 0px 3px #007eff;
+    -webkit-box-shadow: 0px 0px 3px #007eff;
+    -moz-box-shadow: 0px 0px 3px #007eff;
+}
+
+#j-select-all {
+    display: none;
+    margin-top: 8px;
+    font-size: 12px;
+    color: #333333;
+}
+
+/* content */
+
+ul#j-todo-list {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul#j-todo-list li {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px dotted #CCCCCC;
+    padding: 5px 0px;
+    font-size: 18px;
+    list-style-type: none;
+}
+
+ul#j-todo-list li:hover .todo-list-delete {
+    display: block;
+}
+
+.todo-list-checked,
+.todo-list-content,
+.todo-list-delete {
+    float: left;
+}
+
+.todo-list-checked {
+    width: 20px;
+    margin: 10px 5px 0 0;
+}
+
+.todo-list-content {
+    width: 350px;
+}
+
+.todo-list-delete {
+    display: none;
+    float: right;
+    width: 50px;
+    cursor: pointer;
+}
+
+.todo-list-complete {
+    text-decoration: line-through;
+    color: #B1A9B1;
+}
+
+footer {
+    height: 30px;
+    margin-top: 10px;
+    display: block;
+    font-size: 12px;
+    color: #333333;
+}
+
+footer p {
+    display: inline;
+    float: left;
+}
+
+footer #j-todo-clear-complete {
+    display: block;
+    float: right;
+    padding: 0 5px;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    background: #F5F5F5;
+    cursor: pointer;
+}
+
+footer #j-todo-clear-complete:hover {
+    background: #F8F0E3;    
+}

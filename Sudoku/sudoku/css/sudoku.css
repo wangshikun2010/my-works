@@ -1,0 +1,295 @@
+.sudoku {
+	position: relative;
+	width: 800px;
+	height: 510px;
+	margin: 50px auto;
+	background: url(../images/169.jpg);
+	border-radius: 5px;
+	border: 3px solid #CEEEFF;
+	font-family: Microsoft yahei;
+	-webkit-user-select: none;
+}
+
+.sudoku:hover {
+	cursor: pointer;
+}
+
+/*数独面板*/
+.sudoku-panel {
+	float: right;
+	width: 400px;
+	height: 400px;
+}
+
+.sudoku-table {
+	border-collapse: collapse;
+	width: 360px;
+	height: 360px;
+	border: 3px solid #87C7EC;
+	margin: 95px 10px 0px -100px;
+}
+
+.sudoku-table td {
+	position: relative;
+	border: 1px solid #87C7EC;
+	width: 33px;
+	height: 33px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.sudoku-table td:hover {
+	background: #CFFDFF;
+}
+
+
+/*控制面板*/
+.control-panel {
+	position: relative;
+	float: left;
+	width: 170px;
+	height: 375px;
+	text-align: center;
+	border: 1px solid #CEEEFF;
+	margin: 90px 0 0 56px;
+	border-radius: 5px;
+	background: url(../images/4.jpg) -150px -140px;
+}
+
+.control-panel .sudoku-title {
+	color: #79B900;
+	font-size: 1.5em;
+	margin: 0 0 0 -40px;
+	color: rgb(117, 151, 169);
+}
+
+.control-panel .sudoku-title span {
+	font-size: 14px;
+}
+
+hr {
+	height: 3px;
+	background: #C5E9F5;
+	border: none;
+}
+
+.sound {
+	display: none;
+}
+
+.label-sound {
+	position: absolute;
+	left: 135px;
+	top: 10px;
+	display: inline;
+	background: url(../images/ture.PNG) 0px 1px;
+	width: 26px;
+	height: 21px;
+	cursor: pointer;
+	border-radius: 8px;
+}
+
+.sound:checked+label {
+	width: 24px;
+	background: url(../images/false.PNG)  0px 1px;
+}
+
+
+.control-panel .sudoku-time {
+	width: 150px;
+	height: 40px;
+	margin: 10px 0 0 0;
+	padding: 0;
+	font-size: 1.8em;
+}
+
+.control-panel .sudoku-difficulty {
+	width: 150px;
+	height: 60px;
+	margin: 20px 0 0 0;
+	padding: 0;
+	font-size: 0.8em;
+}
+
+.control-panel .sudoku-difficulty .difficulty-title {
+	margin: 10px 0 0 0;
+}
+
+.control-panel .sudoku-difficulty .difficulty {
+	margin: 0;
+}
+
+label:hover {
+	cursor: pointer;
+}
+
+.control-panel .sudoku-start {
+	width: 150px;
+	height: 35px;
+	margin: 10px 0 0 0;
+	padding: 0;
+	font-size: 1.5em;
+}
+
+.block {
+	background: rgb(249, 252, 252);
+	background: -moz-linear-gradient(top, rgb(249, 252, 252) 0%, rgb(211, 227, 232) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgb(249, 252, 252)), color-stop(100%, rgb(211, 227, 232)));
+	background: -webkit-linear-gradient(top, rgb(249, 252, 252) 0%, rgb(211, 227, 232) 100%);
+	background: -o-linear-gradient(top, rgb(249, 252, 252) 0%, rgb(211, 227, 232) 100%);
+	background: -ms-linear-gradient(top, rgb(249, 252, 252) 0%, rgb(211, 227, 232) 100%);
+	background: linear-gradient(to bottom, rgb(249, 252, 252) 0%, rgb(211, 227, 232) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9FCFC', endColorstr='#D3E3E8',GradientType=0);
+	border: 1px solid rgb(180, 199, 208);
+	border-top: 1px solid rgb(220, 233, 237);
+	border-bottom: 1px solid rgb(189, 205, 213);
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0 ,0.075), inset 0px 1px 0px rgb(255, 255, 255), inset 0px -1px 0px rgba(255, 255, 255, 0.75);
+	color: rgb(117, 151, 169);
+	display: inline-block;
+	zoom: 1;
+	font-size: 1em;
+	outline: none;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px rgb(255, 255, 255);
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-webkit-transform: translate3d(0, 0px, 0);
+	-webkit-font-smoothing: antialiased;
+}
+
+.block:hover {
+	opacity: 0.8;
+	/*-webkit-transform: translate3d(0, 5px, 0);*/
+}
+
+.block:active {
+	background: rgb(211,227,232);
+	background: linear-gradient(to bottom, rgb(211, 227, 232) 0%, rgb(249, 252, 252) 100%);
+	background: -moz-linear-gradient(top, rgb(211, 227, 232) 0%, rgb(249, 252, 252) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgb(211, 227, 232)), color-stop(100%, rgb(249, 252, 252)));
+	background: -webkit-linear-gradient(top, rgb(211, 227, 232) 0%, rgb(249, 252, 252) 100%);
+	background: -o-linear-gradient(top, rgb(211, 227, 232) 0%, rgb(249, 252, 252) 100%);
+	background: -ms-linear-gradient(top, rgb(211, 227, 232) 0%, rgb(249, 252, 252) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d3e3e8', endColorstr='#f9fcfc', GradientType=0);
+	box-shadow: inset 0px 1px 2px rgba(104, 131, 160, 0.2);
+	border-top: 1px solid rgb(180, 199, 208);
+	opacity: 1;
+}
+
+.button {
+	width: 70px;
+	height: 30px;
+	margin: 15px 0 0 0;
+	padding: 5px 0;
+}
+
+/**
+ * 键盘数字样式
+ */
+@-webkit-keyframes mytable {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.number-table {
+	position: absolute;
+	left: 40px;
+	top: 20px;
+	z-index: 9999;
+	width: 69px;
+	height: 69px;
+	cursor: pointer;
+	opacity: 1;
+	border: 1px solid #FF5400;
+	border-radius: 5px;
+	display: none;
+	-webkit-animation-name: mytable;
+	-webkit-animation-duration: 0.2s;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-user-select: none;
+}
+
+.number-table div {
+	float: left;
+	width: 21px;
+	height: 21px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	color: #B847FF;
+	border: 1px solid #FF5400;
+	margin: 0;
+	background: url(../images/e.PNG) 20px 0px;	
+}
+
+.number-table div:hover {
+	background: #FFFFFF;
+}
+
+/*动态创建动画框样式*/
+@-webkit-keyframes mycolor {
+	0% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.dialog {
+	position: absolute;
+	z-index: 9999;
+	left: 550px;
+	top: 200px;
+	display: none;
+	width: 300px;
+	height: 120px;
+	border-width: 8px;
+	padding: 30px;
+	border-radius: 15px;
+	font-family: Microsoft yahei;
+	font-weight: bold;
+	opacity: 1;
+	-webkit-animation-name: mycolor;
+	-webkit-animation-duration: 0.2s;
+	-webkit-animation-timing-function: ease-out;
+}
+
+.dialog:hover {
+	opacity: 1;
+}
+
+.dialog-button {
+	display: block;
+	width: 100px;
+	text-align: center;
+	margin: 20px auto 0;
+	padding: 5px 0;
+}
+
+/*数独游戏分割样式*/
+.sudoku-table .rowborder {
+	border-bottom: 3px solid #87C7EC;
+}
+
+.sudoku-table .cellborder {
+	border-right: 3px solid #87C7EC;
+}
+
+.select-no {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+
+

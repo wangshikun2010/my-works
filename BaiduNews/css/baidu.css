@@ -1,0 +1,282 @@
+body, ul, li, table, td, th, tr, form, a, p, span, div,dd {
+	margin: 0px;
+	padding: 0px;
+}
+a {
+	text-decoration: none;
+}
+body {
+	font-size: 13px;
+	color: #555555;
+}
+
+ /*#header,#content, #left, #right,
+ #footer,#nav,#banner {
+	border: 1px solid #FF0000;
+}*/
+
+#banner {
+	width: 1423px;
+	height: 20px;
+	text-align: right;
+	padding-top: 8px;
+}
+#banner a {
+	color: #0000cc;
+	text-decoration: underline;
+}
+#wrapper {
+	width: 984px;
+	margin: 0px auto;
+}
+#header {
+	width: 834px;
+	background:  #ffffff url(../images/bai.gif) no-repeat  10px center;
+	padding: 10px 0px 10px 150px ;
+}
+#header a {
+	text-decoration: underline;
+	font-size: 15px;
+	color: #0000cc;
+	margin: 2px;
+}
+#xinwen {
+	float: right;
+}
+#nav {
+	width: 984px;
+	background: url(../images/line.gif) repeat-x -9px 0px;
+}
+
+#nav ul li {
+	height: 30px;
+	background: url(../images/icon.gif) no-repeat -45px -91px;
+	padding: 0px 4px 0px 11px;
+	line-height: 30px;
+	display: inline-block;
+}
+
+#nav ul li a {
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#content {
+	width: 984px;
+	height: 400px;
+}
+
+#left {
+	width: 647px;
+	height: 387px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #999999;
+	float: left;
+	margin-top: 12px;
+}
+
+dl {
+	height: 400px;
+	margin-top: 0;
+}
+
+#title {
+	height: 23px;
+	line-height: 23px;
+	padding: 2px 10px;
+	background: url(../images/line01.gif) repeat-x -9px 0px;
+	font-size: 15px;
+}
+#title a {
+	vertical-align: middle;
+	display: table-cell;
+	color: #333333;
+}
+#content1 {
+	margin: 5px 0px 0px 25px;
+}
+
+#left1 {
+	float: left;
+}
+
+.font {
+	color: #717171;
+	margin: 4px 0px 8px 0px;
+}
+ ul, li {
+	list-style: none;
+}
+.top {
+	margin-bottom: 3px;
+	height: 24px;
+	padding-top: 3px;
+}
+
+.font li a {
+	line-height: 25px;
+	color: #1f1c25;
+	letter-spacing: -2pt;
+}
+.font .top a {
+	font-size: 20px;
+	line-height: 27px;
+	font-family: "黑体";
+	text-decoration: none;
+	color: #bb2a31;
+}
+
+.font1 {
+	margin-bottom: 10px;
+	height: 168px;
+	overflow: hidden;
+}
+
+.font1 a {
+	line-height: 22px;
+	color: #123db4;
+	font-size: 15px;
+}
+#right1 {
+	float: right;
+	width: 226px;
+	margin: 8px 10px 5px 0;
+}
+#img {
+	background: #ebebeb;
+	margin-bottom: 5px;
+}
+#img a {
+	font-size: 15px;
+	color: #333333;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: -1px;
+	padding: 5px;
+}
+#img1 {
+	width: 109px;
+	height: 80px;
+	margin-top: 10px;
+	float: left;
+}
+#img2 {
+	width: 109px;
+	height: 80px;
+	margin-top: 10px;
+	float: right;
+}
+
+#content a:hover, #content a:active {
+	text-decoration: underline;
+}
+
+#right {
+	width: 330px;
+	height: 400px;
+	float: right;
+}
+
+.block {
+	width:325px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #999999;
+	background-color: #f9f9f9;
+	padding: 0px;
+	margin: 11px 0px 0px 5px;
+}
+#top {
+	height: 225px;
+}
+#bottom {
+	height: 150px;
+}
+
+#top dt span {
+	height: 24px;
+	line-height: 26px;
+	font-weight: bold;
+	font-size: 14px;
+	overflow: hidden;
+	border-bottom: 1px solid #E8E8E8;
+	display: block;
+	padding-left: 2px;
+}
+#top dt span a {
+	color: #000000;
+}
+#top dt span div {
+	float: right;
+	font-size: 13px;
+	font-weight: lighter;
+	line-height: 24px;
+	padding-right: 0px;
+	background: none;
+}
+#top dt span div a {
+	color: #ba2a31;
+}
+.list {
+	padding: 10px;
+	display: inline;
+	font-size: 15px;
+	color: #f9f9f9;
+	line-height: 26px;
+}
+.list ul li a {
+	color: #123db4;
+	letter-spacing: -1px;
+}
+#left2 {
+	float: left;
+	padding: 10px;
+}
+
+#right2 {
+	float: right;
+	padding: 10px;
+}
+#bottom dt span {
+	height: 24px;
+	line-height: 26px;
+	font-weight: bold;
+	font-size: 14px;
+	overflow: hidden;
+	border-bottom: 1px solid #E8E8E8;
+	display: block;
+	padding-left: 2px;
+	color: #000000;
+}
+#bottom dt span a {
+	color: #000000;
+}
+#bottom dt span div {
+	float: right;
+	font-size: 13px;
+	font-weight: lighter;
+	line-height: 24px;
+	padding-right: 0px;
+	background: none;
+}
+#left3 {
+	line-height: 22px;
+	font-size: 13px;
+	padding: 10px;
+}
+
+#footer {
+	width: 984px;
+}
+#center {
+	text-align: center;
+	line-height: 20px;
+	color: #737573;
+	margin-top: 2px;
+}
+#center a {
+	text-decoration: underline;
+	color: #7777cc;
+}

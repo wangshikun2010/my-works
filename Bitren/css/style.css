@@ -1,0 +1,171 @@
+body {
+		width: 960px;
+		margin: 0px auto;
+		background-color: #394F5F;
+		font-size: 13px;
+		color: #555555;
+}
+
+a {
+	text-decoration: none;
+	color: #555555;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+	color: #000000;
+}
+#header {
+		width: 960px;
+		background-color: #EEF1F4;
+		background: transparent url(../images/tb.gif) left top repeat-x;
+		height: 115px;
+}
+
+#header1 {
+	height: 90px;
+	overflow: hidden;
+}
+
+#header2 {
+	background: transparent url(../images/mb1.gif) left top repeat-x;
+	height: 21px;
+	line-height: 21px;
+	padding: 2px;
+	text-align: center;
+}
+
+#content {
+	background-color: #EEF1F4;
+	color: #555555;
+}
+
+#left {
+	width: 644px;
+	float: left;
+	padding: 8px;
+}
+
+#right {
+	width: 290px;
+	float: right;
+}
+
+#footer {
+		clear: both;
+		background:  #ffffff url(../images/coral.gif) no-repeat  10px center;
+		margin: 0px;
+		padding: 20px 0px 25px 135px;
+		line-height: 25px;
+}
+#footer p {
+	margin: 0px;
+}
+
+/*
+#header, #content, #left, #right, #footer {
+	border: 1px solid #FF0000;
+	margin: 3px;
+}
+*/
+
+.image {
+		width: 234px;
+		height: 90px;
+}
+
+.image1 {
+		width: 684px;
+		height: 72px;
+		margin: 10px 0px 10px 0px;
+}
+
+.form {
+		width: 80px;
+		border-bottom: 10px;
+		text-align: left;
+		clear: left;
+		float: left;
+}
+
+input.input1 {
+	width: 80px;
+}
+
+#links {
+		border-width: 1px;
+		border-style: solid;
+		border-color: #999999;
+		line-height: 18pt;
+		background-color: #FFFFFF;
+		padding: 10px;
+		margin-top: 5px;
+		border-radius: 3px;
+}
+
+#links h3{
+	margin: 6px 0px 6px 15px;
+}
+
+#links .group {
+	padding: 3px;
+	border-radius: 3px;
+}
+
+#links .group.jishu {
+	background-color: #EFEFEF;
+}
+
+#links .group.oushu {
+	background-color: #FFFFFF;
+}
+
+#links strong {
+	color: #006699;
+}
+
+#links a.green {
+	color: #00FF00;
+}
+
+#links a.red {
+	color: #FF0000;
+}
+
+.block {
+		width: 280px;
+		border-width: 1px;
+		border-style: solid;
+		border-color: #999999;
+		line-height: 18pt;
+		margin: 5px 10px 10px auto;
+		border-radius: 3px;
+}
+.block .news {
+	list-style-position: inside;
+	padding: 8px;
+	margin: 0px;
+}
+.block a:hover, .block a:active {
+	text-decoration: none;
+	color: #0000ff;
+}
+
+.block h3 {
+		border-bottom: 1px dashed #000000;
+		margin: 0px;
+		padding: 3px ;
+}
+
+#none {
+		font-weight: bold;
+		color: #000000;
+		margin: 5px 0px 0px 10px;
+}
+#none1 {
+		font-weight: bold;
+		color: #000000;
+		text-align: center;
+		font-size: 18px;
+}
+
