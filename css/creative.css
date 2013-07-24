@@ -1,0 +1,129 @@
+/* 总体样式 */
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font: 13px/24px normal 'Microsoft Yahei', Verdana, Arial, Sans-Serif;
+    background: url(../images/bei.PNG) repeat;
+}
+
+a {
+    color: #0279bb;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff5400;
+    text-decoration: underline;
+}
+
+ul,li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* IE < 8 */
+.clearfix {
+    zoom: 1;
+} 
+
+
+/* 导航 */
+
+header {
+    display: block;
+    height: 50px;
+    padding: 0 220px;
+    margin-bottom: 20px;
+    background: #7CC0CB;
+}
+
+header .title {
+    padding: 12px 0;
+    margin: 0;
+    font-size: 20px;
+    color: #F9F9F9;
+}
+
+/*nav部分*/
+
+.nav {
+    padding: 0 220px;
+    margin: 0 auto;
+}
+
+.tabs {
+    margin: 0;
+    padding: 0;
+}
+
+.tabs li {
+    float: left;
+    width: 11%;
+    border-right: 1px solid #7CC0CB;
+    text-align: center;
+    font-size: 14px;
+    color: #79B900;
+    background: url(../images/nav_bg.gif) repeat;
+    line-height: 35px;
+}
+
+.tabs li:last-child {
+    border: none;
+}
+
+.tabs li.hover {
+    padding:0px;
+    background: #FF5400;
+}
+
+.tabs a {
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.tabs a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* 内容 */
+
+.content__item {
+    padding: 20px 220px 0 220px;
+}
+
+.block {
+    padding: 10px 0 0 10px;
+    border: 1px solid #EEEEE9; 
+    background: #FFFFFF;
+}
+
+.block img {
+    width: 500px;
+    height: 400px;
+}
+
+/* 尾部 */
+
+footer {
+    padding: 20px 220px 0 220px;    
+}
+
+footer p {
+    margin: 0;
+}
