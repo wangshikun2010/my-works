@@ -1,5 +1,4 @@
 /* 总体样式 */
-
 body {
     margin: 0 auto;
     padding: 0;
@@ -8,12 +7,12 @@ body {
 }
 
 a {
-    color: #0279bb;
+    color: #0279BB;
     text-decoration: none;
 }
 
 a:hover {
-    color: #ff5400;
+    color: #FF5400;
     text-decoration: underline;
 }
 
@@ -42,88 +41,56 @@ ul,li {
 
 
 /* 导航 */
-
 header {
-    display: block;
-    height: 50px;
-    padding: 0 220px;
-    margin-bottom: 20px;
-    background: #7CC0CB;
 }
 
-header .title {
-    padding: 12px 0;
-    margin: 0;
-    font-size: 20px;
-    color: #F9F9F9;
+header .navbar-inner {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
 }
 
-/*nav部分*/
-
-.nav {
-    padding: 0 220px;
-    margin: 0 auto;
+/* content部分 */
+.content {
+    margin: 0 150px;
 }
 
-.tabs {
-    margin: 0;
-    padding: 0;
+.content .tabbable {
+    position: relative;
 }
 
-.tabs li {
-    float: left;
-    width: 11%;
-    border-right: 1px solid #7CC0CB;
-    text-align: center;
-    font-size: 14px;
-    color: #79B900;
-    background: url(../images/nav_bg.gif) repeat;
-    line-height: 35px;
+.content .tabbable .nav-tabs {
+    /*float: left;*/
 }
 
-.tabs li:last-child {
-    border: none;
+.content .tabbable .tab-content {
+    /*float: right;*/
+    /*display: inline;*/
+    /*width: 600px;*/
+    position: absolute;
+    left: 150px;
+    top: 0px;
 }
 
-.tabs li.hover {
-    padding:0px;
-    background: #FF5400;
+.item-block {
+    
 }
 
-.tabs a {
-    color: #FFFFFF;
-    font-weight: bold;
-    padding: 5px 10px;
-}
-
-.tabs a:hover {
-    text-decoration: none;
-    color: #000000;
-}
-
-/* 内容 */
-
-.content__item {
-    padding: 20px 220px 0 220px;
-}
-
-.block {
-    padding: 10px 0 0 10px;
-    border: 1px solid #EEEEE9; 
-    background: #FFFFFF;
-}
-
-.block img {
+.item-block img {
     width: 500px;
     height: 400px;
 }
 
+/*.tab-content {
+    float: right;
+    display: inine;
+}
+*/
 /* 尾部 */
-
-footer {
+/*footer {
     padding: 20px 220px 0 220px;    
 }
-
+*/
 footer p {
     margin: 0;
 }
