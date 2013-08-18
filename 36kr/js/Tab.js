@@ -7,7 +7,7 @@ window.onload = function () {
 		//面板类
 		tabs_contentClass: 'tabs_content',
 		//触发事件
-		tiggerEvent: 'onmouseover',
+		tiggerEvent: 'onmouseover'
 	});
 
 	// 第2,3个选项卡
@@ -17,35 +17,12 @@ window.onload = function () {
 		//面板类
 		tabs_contentClass: 'spec',
 		//触发事件
-		tiggerEvent: 'onmouseover',
+		tiggerEvent: 'onmouseover'
 	});
 }
 
 //
 function tabs(options) {
-	if (!options.newClass) {
-		alert('必须制定newClass选项');
-	}
-
-	if (!options.tabs_contentClass) {
-		alert('必须制定tabs-contentClass选项');
-	}
-
-	if (!options.tiggerEvent) {
-		alert('必须制定tiggerEvent选项');
-	}
-
-	var bool	= true;
-	var string	= "wangshikun";
-	var date	= new Date();
-	var time	= (new Date()).getTime();
-	var person	= {
-		name: "wangshikun",
-		age: 19
-	};
-
-	// alert(person.name);
-	// alert(person.age);
 
 	//在li元素里找到class为tab类的元素
 	var news = getElementsByClassName('a', options.newClass);
@@ -76,17 +53,6 @@ function tabs(options) {
 
 //
 function ones(options) {
-	if (!options.newClass) {
-		alert('必须制定newClass选项');
-	}
-
-	if (!options.tabs_contentClass) {
-		alert('必须制定tabs-contentClass选项');
-	}
-
-	if (!options.tiggerEvent) {
-		alert('必须制定tiggerEvent选项');
-	}
 
 	//在li元素里找到class为tab类的元素
 	var news = getElementsByClassName('a', options.newClass);
