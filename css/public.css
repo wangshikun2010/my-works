@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body, head, html, div, p, ul, li, h1, h2, h3, h4, h5, h6,img, dl, dd, dt, table, th, tr, td, label {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+dl dt, dl dd {
+    display: inline;
+}
+
+input, textarea, select {
+    outline: none;
+}
+
+img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font: 14px/24px normal 微软雅黑, 'Microsoft Yahei';
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+    overflow: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
