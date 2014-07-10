@@ -1,0 +1,106 @@
+/* 总体样式 */
+body {
+    background: url(../images/bei.PNG) repeat;
+}
+
+a {
+    color: #0279BB;
+}
+
+a:hover {
+    color: #FF5400;
+}
+
+/* header */
+header {
+    height: 50px;
+    background: #000000;
+    opacity: 0.7;
+}
+
+.navbar-inner {
+    padding: 0;
+}
+
+.container {
+    /*border: 1px solid #CCCCCC;*/
+    margin: 0 50px;
+}
+
+.navbar .nav > li {
+    float: left;
+    display: block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.navbar .nav > li.divider-vertical {
+    width: 0px;
+    height: 100%;
+    border-right: 1px solid #CCCCCC;
+}
+
+.navbar .nav > li:hover {
+    background: #111111;
+}
+
+.navbar .nav > li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* content */
+.nav-tabs {
+}
+.tab-content {
+}
+.item__block {
+}
+
+.item__block img {
+    width: 500px;
+}
+
+.item__description {
+}
+
+/* footer */
+footer {
+    background: #FFFFFF;
+}
+
+/* 水平状态的手机及以下 */
+@media (max-width: 480px) {
+    .container {
+        margin: 0 10px;
+    }
+}
+
+/* 界于水平手机与竖直平板之间 */
+@media (max-width: 768px) {
+    .container {
+        margin: 0 20px;
+    }
+
+    .item__block img {
+        width: 200px;
+    }
+
+}
+
+/* 界于竖直平板与水平平板/桌面之间 */
+@media (min-width: 768px) and (max-width: 980px) {
+    .container {
+        margin: 0 50px;
+    }
+
+    .item__block img {
+        width: 200px;
+    }
+}
+
+/* 宽桌面 */
+@media (min-width: 1200px) {}
+
